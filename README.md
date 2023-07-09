@@ -12,7 +12,7 @@
 [Como usar](#como-usar) -
 [Quando usar](#quando-usar) -
 [Aonde usar](#aonde-usar) -
-[Testado](#testado) -
+[Testado](#testado)
 
 </div>
 
