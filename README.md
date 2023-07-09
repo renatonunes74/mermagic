@@ -19,6 +19,62 @@
 ## Pré-visualização
 ![](preview.gif)
 
+### Resultado
+```mermaid
+classDiagram
+class DemoApplicationTests {
+  void contextLoads();
+}
+class ProductController {
+  -com.foodminder.FoodMinder.domain.product.ProductRepository repository;
+  +com.foodminder.FoodMinder.controllers.ProductController();
+  +getAllProducts();
+  +registerProduct(com.foodminder.FoodMinder.domain.product.RequestProduct);
+  +updateProduct(com.foodminder.FoodMinder.domain.product.RequestProduct);
+  +deleteProduct(String);
+}
+class DemoApplication {
+  +com.foodminder.FoodMinder.DemoApplication();
+  +static void main(String[]);
+}
+class Product {
+  -String id;
+  -String name;
+  -Integer price_in_cents;
+  -Boolean active;
+  +com.foodminder.FoodMinder.domain.product.Product(com.foodminder.FoodMinder.domain.product.RequestProduct);
+  +String getId();
+  +String getName();
+  +Integer getPrice_in_cents();
+  +Boolean getActive();
+  +void setId(String);
+  +void setName(String);
+  +void setPrice_in_cents(Integer);
+  +void setActive(Boolean);
+  +com.foodminder.FoodMinder.domain.product.Product(String, String, Integer, Boolean);
+  +com.foodminder.FoodMinder.domain.product.Product();
+  +boolean equals(Object);
+  #boolean canEqual(Object);
+  +int hashCode();
+}
+class RequestProduct {
+  -final String id;
+  -final String name;
+  -final Integer price_in_cents;
+  +com.foodminder.FoodMinder.domain.product.RequestProduct(String, String, Integer);
+  +final String toString();
+  +final int hashCode();
+  +final boolean equals(Object);
+  +String id();
+  +String name();
+  +Integer price_in_cents();
+}
+class ProductRepository {
+<<interface>>
+}
+ProductRepository ..|> Product : Realization
+```
+
 ## Porque usar
 - Para fins de documentação do projeto, além de outros beneficios de um diagrama de classes.
 
