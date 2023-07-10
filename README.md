@@ -6,7 +6,7 @@
 ![Repository issues"](https://img.shields.io/github/issues/rockofox/firefox-minima.svg?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/renatonunes74/mermagic?style=for-the-badge)
 # Mermagic
-**Criador de Diagrama de Classes para Java<br>Esta em desenvolvimento!**
+**Criador de Diagrama de Classes [Mermaid](https://mermaid.js.org) para Java<br>Esta em desenvolvimento!**
 
 [Porque usar](#porque-usar) -
 [Como usar](#como-usar) -
@@ -87,7 +87,7 @@ ProductRepository ..|> Product : Realization
     - CLI / via Terminal:
         - `chmod +x mermagic.sh` (Para deixar executável)
         - `./mermagic.sh diretório/do/projeto/java`
-1. Agora é só colar a saída num arquivo mermaid!
+1. Agora é só colar a saída num arquivo [Mermaid](https://mermaid.js.org)!
 
 ### Dependências necessárias
 - Pacotes Linux básicos, como: cat, grep, find, sed...
@@ -96,7 +96,7 @@ ProductRepository ..|> Product : Realization
 
 
 ### Funcionalidades
-- Por enquanto apenas gera a saída para mermaid.
+- Por enquanto apenas gera a saída formatado para [Mermaid](https://mermaid.js.org) em [Markdown](https://daringfireball.net/projects/markdown/).
 
 ### Tecnologias usadas
 - Complementares:
